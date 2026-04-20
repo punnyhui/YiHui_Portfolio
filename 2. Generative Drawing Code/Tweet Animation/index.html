@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>p5 Tweets</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js"></script>
+  </head>
+  <body>
+    <main>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
+
+i=0;
+function setup(){
+  createCanvas(900,900);
+}
+function draw(){
+  for(j=0;j<99;)
+    rect(i++%(899-j++), int(i/99)%(899-j), i%12, j%16);
+}
